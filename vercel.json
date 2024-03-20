@@ -1,0 +1,16 @@
+{
+    "version":2, 
+    "builds":[ 
+        {
+            "src":"FoodProject/wsgi.py", 
+            "use":"@vercel/python", 
+            "config":{"max_ambdaSize":"15mb", "runtime":"python3.9"}     
+        }], 
+    "routes":[ 
+      {
+          
+            "src":"/(.*)", 
+            "dest":"FoodProject/wsgi.py"  
+        }
+    ]
+}

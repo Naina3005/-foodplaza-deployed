@@ -156,7 +156,7 @@
 	</div>
     </div>
 	
-    <!-- form --><div style="width:100%;background-image:url({% static 'images/foodformbckblur.png' %});background-size: 100%;background-repeat: no-repeat;background-position:center;">
+    <!-- form --><div style="width:100%; background-image:url({% static 'images/foodformbckblur.png' %});background-size: 100%; background-repeat: no-repeat;background-position:center; ">
 	<center>
 	<form class="myform-container" action="/editcustomer/{{c.CustId}}" method="post">{% csrf_token %}
             <span class="entry-box">First Name : <input type="text" name="CustFName" value="{{c.CustFName}}" placeholder="Eg: &quot;Michael&quot;"required></span>
